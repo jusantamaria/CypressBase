@@ -20,8 +20,8 @@ module.exports = defineConfig({
       return config;
     },
 
-    specPattern: "cypress/integration/SitioPrueba/*.js",
-    baseUrl: "https://www.saucedemo.com",
+    specPattern: "cypress/integration/",
+    //baseUrl: "https://the-internet.herokuapp.com",
     chromeWebSecurity: false,
   },
 });
