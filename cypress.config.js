@@ -20,8 +20,9 @@ module.exports = defineConfig({
       return config;
     },
 
-    specPattern: "cypress/integration/",
+    specPattern: "cypress/e2e",
     //baseUrl: "https://the-internet.herokuapp.com",
     chromeWebSecurity: false,
   },
+  reporter: "mochawesome"
 });

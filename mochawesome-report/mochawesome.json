@@ -1,0 +1,104 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-03-13T00:41:24.477Z",
+    "end": "2023-03-13T00:41:29.987Z",
+    "duration": 5510,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ebd6275a-b78b-4f39-a6c9-34c39c3b4196",
+      "title": "",
+      "fullFile": "cypress\\e2e\\SitioPrueba\\Tablas.spec.js",
+      "file": "cypress\\e2e\\SitioPrueba\\Tablas.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6108addb-b27e-4066-92c8-7303c08fd380",
+          "title": "Tablas estáticas y dinámicas",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validando una tabla dinámica",
+              "fullTitle": "Tablas estáticas y dinámicas Validando una tabla dinámica",
+              "timedOut": null,
+              "duration": 2074,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://chercher.tech/practice/dynamic-table\");\ncy.get(\"td\", \"facebook.com\").prev().find(\"input\").check();",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Bootstrap dropdown require Popper.js (https://popper.js.org)\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > Bootstrap dropdown require Popper.js (https://popper.js.org)\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at <unknown> (https://chercher.tech/vendor/bootstrap/js/bootstrap.min.js:6:17548)\n    at <unknown> (https://chercher.tech/vendor/bootstrap/js/bootstrap.min.js:6:23163)\n    at <unknown> (https://chercher.tech/vendor/bootstrap/js/bootstrap.min.js:6:50902)",
+                "diff": null
+              },
+              "uuid": "2568db91-e2d7-49bd-914e-65fc5bc11d64",
+              "parentUUID": "6108addb-b27e-4066-92c8-7303c08fd380",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "2568db91-e2d7-49bd-914e-65fc5bc11d64"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2074,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
